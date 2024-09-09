@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: hsla(0, 54%, 86%, 0.929); /* Fallback background color */
+    background-image: url('background.png.jpeg'); /* Replace with the actual path to your background image */
+    background-size: cover; /* Ensures the image covers the whole screen */
+    background-position: static
+    ; /* Center the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    text-align: center;
+    padding: 90px;
+    color: #333; /* Set text color for better contrast */
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-item img {
+    width: 200px; /* Adjust the size of the header image */
+    height: auto;
+}
+
+.container {
+    height: 600px;
+    width: 800px;
+    position: relative;
+    display: inline-block;
+    position: fixed center
+    ;
+    margin-top: 50px;
+    background-color: #818181; /* White background for the main content area */
+    right: 20px;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+
+
+#welcome-btn {
+    margin-top: 20px;
+    padding: 20px 30px;
+    font-size: 30px;
+    font-weight: bolder;
+    cursor: pointer;
+    background-color: #363636;
+    border: white;
+    border-radius: 5px;
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+#message {
+    margin-top: 20px;
+    font-size: 25px;
+    color: #ffffff;
+}
+
+.plant-container {
+    margin-top: 50px;
+}
+
+.withered-plant {
+    width: 100px;
+    height: 150px;
+    background-image: url('path-to-withered-plant-image.png'); /* Replace with actual path */
+    background-size: cover;
+    margin: 0 auto;
+}
+
+.green-plant {
+    background-image: url('path-to-green-plant-image.png'); /* Replace with actual path */
+    background-size: cover;
+}

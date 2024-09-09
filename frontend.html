@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFF Water Flow Animation</title>
+    <link rel="stylesheet" href="abc.css">
+    <style>
+        /* Styles for the news ticker */
+        .news-ticker {
+            width: 100%;
+            background-color: #000000;
+            overflow: hidden;
+            white-space: nowrap;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: fixed;
+            top: 0;
+            z-index: 9999;
+            padding: 10px 10px;
+            color: white;
+            font-size: 20px;
+            font-weight: bolder;
+            text-align: center;
+        }
+
+        .news-ticker-content {
+            display: inline-block;
+            animation: scroll 25s linear infinite;
+            padding-left: 100%;
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(10%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        /* Adjust the position of the container so it doesn't overlap the ticker */
+        .container {
+            margin-top: 60px; /* To make room for the news ticker */
+        }
+    </style>
+</head>
+<body>
+    <!-- News ticker section -->
+    <div class="news-ticker">
+        <div class="news-ticker-content">
+            Welcome to NFF 2024 WHERE Rethinking Innovative Concepts Into Tangible Investments
+        </div>
+    </div>
+
+</head>
+<body>
+    <div class="header">
+        <div class="logo-container">
+            <!-- Add logos here if needed -->
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Replace NFF text with an image -->
+        <div class="nff-logo">
+            <!-- Initially shows remove.png -->
+            <img id="nff-logo-img" src="remove.png" alt="NFF Logo" style="width: 650px; height: auto;">
+        </div>
+
+        <p style="font-size: 27px;"><b>Nepal Food Forum - 2024</b></p>
+
+        <!-- Welcome button to trigger the image change -->
+        <button id="welcome-btn">WELCOME</button>
+
+        <div id="message" class="hidden">
+            <p style="font-size: 40px;"><b>To You All</b></p>
+            <p><b>Rethinking Innovative Concepts Into Tangible Investments</b></p>
+        </div>
+
+        <div class="plant-container">
+            <div id="plant" class="withered-plant"></div>
+        </div>
+    </div>
+
+    <!-- JavaScript to change image on button click -->
+    <script>
+        // Get the welcome button and image element
+        const welcomeBtn = document.getElementById('welcome-btn');
+        const logoImage = document.getElementById('nff-logo-img');
+
+        // Add an event listener to the button
+        welcomeBtn.addEventListener('click', function() {
+            // Change the source of the image when the button is clicked
+            logoImage.src = 'gif.gif'; // Replace with the path to your new image
+        });
+    </script>
+</body>
+</html>
